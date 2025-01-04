@@ -46,7 +46,7 @@ public class UserController {
 
         if(authenticated != null){
             model.addAttribute("userLogin", authenticated.getLogin());
-            return "personal_page";
+            return "students";
         }else {
             return "error_page";
         }
